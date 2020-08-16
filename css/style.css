@@ -1,9 +1,18 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  position: relative; }
+
 .navbar-toggler {
   cursor: pointer;
   color: white; }
 
 .btn-rounded {
   border-radius: 20px; }
+
+.shape-container {
+  overflow: hidden; }
 
 #showcase {
   color: white; }
@@ -15,8 +24,7 @@
 
 @media (max-width: 768px) {
   #showcase, #pricing, #copyright {
-    text-align: center;
-    padding: 5%; }
+    text-align: center; }
 
   .img-container {
     margin-top: 30px; }
@@ -33,6 +41,9 @@
   box-shadow: 0px 0px 100px #e2e0e0; }
   .article .img-container .img {
     border-radius: 20px; }
+
+.card-deck {
+  padding: 5%; }
 
 #pricing {
   box-shadow: 0px 2px 5px black; }

@@ -1,3 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position:relative;
+}
+
+
 .navbar-toggler{
     cursor: pointer;
     color:white;
@@ -5,6 +14,10 @@
 
 .btn-rounded{
     border-radius:20px;
+}
+
+.shape-container{
+    overflow:hidden;
 }
 
 #showcase{
@@ -23,7 +36,6 @@
 @media(max-width:768px){
     #showcase,#pricing,#copyright{
         text-align:center;
-        padding:5%;
     }
     .img-container{
         margin-top:30px;
@@ -34,6 +46,8 @@
     .article{
         padding:0 5%;
     }
+
+    
 }
 @media(min-width:1200px){
     .container{
@@ -49,6 +63,10 @@
             border-radius:20px;
         }
     }
+}
+
+.card-deck{
+    padding:5%;
 }
 
 #pricing{
