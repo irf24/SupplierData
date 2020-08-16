@@ -16,6 +16,10 @@ body{
     border-radius:20px;
 }
 
+.shape-container{
+    overflow:hidden;
+}
+
 #showcase{
     color:white;
 
@@ -26,9 +30,6 @@ body{
         border-radius: 16px;
         border:1px groove gray
         
-    }
-    .shape-container{
-        overflow:hidden;
     }
 
 }

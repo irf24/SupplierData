@@ -11,6 +11,9 @@ body {
 .btn-rounded {
   border-radius: 20px; }
 
+.shape-container {
+  overflow: hidden; }
+
 #showcase {
   color: white; }
   #showcase .img-container {
@@ -18,8 +21,6 @@ body {
   #showcase img {
     border-radius: 16px;
     border: 1px groove gray; }
-  #showcase .shape-container {
-    overflow: hidden; }
 
 @media (max-width: 768px) {
   #showcase, #pricing, #copyright {
