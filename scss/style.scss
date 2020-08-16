@@ -12,6 +12,12 @@ body{
     color:white;
 }
 
+@media(max-width:768px){
+    .navbar-divider{
+        display:block;
+    }
+}
+
 .btn-rounded{
     border-radius:20px;
 }
