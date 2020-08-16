@@ -50,3 +50,64 @@ body {
 
 #pricing {
   box-shadow: 0px 2px 5px black; }
+
+.hidden {
+  display: none; }
+
+.visibility-none {
+  visibility: hidden; }
+
+/*-------topbar -----------*/
+.sidebar {
+  border-right: 1px solid rgba(0, 0, 0, 0.1); }
+
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 9999;
+  height: 100vh; }
+
+.dashboard-header {
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  background-color: #5a14db; }
+
+.sidebar-toggler {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000; }
+
+@media (min-width: 768px) {
+  .sidebar-toggler {
+    display: none; } }
+.main-body {
+  margin-top: 100px; }
+
+.sidebar-toggler:hover {
+  cursor: pointer; }
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: -webkit-sticky;
+    position: fixed;
+    width: 220px;
+    top: 0;
+    left: -100%;
+    z-index: 9999;
+    height: 100vh;
+    transition: 0.3s ease-out; }
+
+  .body-blur {
+    filter: blur(8px);
+    -webkit-filter: blur(8px); } }
+@media (min-width: 1200px) {
+  .sidebar {
+    -ms-flex: 0 1 320px;
+    flex: 0 1 320px; } }
+.show-sidebar {
+  left: 0;
+  transition: 0.3s ease-out; }
