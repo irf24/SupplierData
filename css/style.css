@@ -1,3 +1,9 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  position: relative; }
+
 .navbar-toggler {
   cursor: pointer;
   color: white; }
@@ -12,11 +18,12 @@
   #showcase img {
     border-radius: 16px;
     border: 1px groove gray; }
+  #showcase .shape-container {
+    overflow: hidden; }
 
 @media (max-width: 768px) {
   #showcase, #pricing, #copyright {
-    text-align: center;
-    padding: 5%; }
+    text-align: center; }
 
   .img-container {
     margin-top: 30px; }
@@ -33,6 +40,9 @@
   box-shadow: 0px 0px 100px #e2e0e0; }
   .article .img-container .img {
     border-radius: 20px; }
+
+.card-deck {
+  padding: 5%; }
 
 #pricing {
   box-shadow: 0px 2px 5px black; }
