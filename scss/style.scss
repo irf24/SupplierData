@@ -147,6 +147,9 @@ body{
         left:0;
         z-index:1000;
     }
+    .push-canvas{
+        left:200px;
+    }
     
 }
 #dashboard{
@@ -179,6 +182,8 @@ body{
         overflow:scroll;
         background-color: white;
     }
+
+    
 
     .show-sidebar{
         visibility: visible;

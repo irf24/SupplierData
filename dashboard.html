@@ -21,9 +21,6 @@
 <section id="dashboard">
   <div class="d-flex">
     <div class="col-md-4 col-lg-3 sidebar ">
-      <div class="d-flex justify-content-end">
-        <i class="material-icons btn-close">clear</i>
-      </div>
       <div class="title">
         <a href="index.html" class="navbar-brand"><span class="material-icons mr-1">
           business
@@ -145,11 +142,10 @@
         <script>
             $(document).ready(function () {
                 $(".btn-open").click(function () {
-                    $(".sidebar").addClass('show-sidebar');
+                    $(".sidebar").toggleClass('show-sidebar');
+                    $(".main-body").toggleClass('push-canvas');
                 });
-                $(".btn-close").click(function () {
-                    $(".sidebar").removeClass('show-sidebar');
-                });
+
                 $('#filter').click(function(){
                   $('.filters').toggleClass('hidden');
                 })

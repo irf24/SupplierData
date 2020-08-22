@@ -92,7 +92,10 @@ body {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1000; } }
+    z-index: 1000; }
+
+  .push-canvas {
+    left: 200px; } }
 #dashboard {
   /* Hide scrollbar for Chrome, Safari and Opera */
   /* Hide scrollbar for IE, Edge and Firefox */ }
