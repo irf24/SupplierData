@@ -107,16 +107,8 @@ body{
  
 
 
-
-
-
-.dasboard-header{
-    height:4rem;
-    
-}
-
 @media(min-width:768px){
-    .btn-close,.btn-open{
+    .btn-open{
         display:none;
     }
     .search-btn{
@@ -124,71 +116,91 @@ body{
     }
 }
 
-.btn-close,.btn-open{
+.btn-open{
     cursor:pointer;
 }
-.btn-close{
-    position:relative;
-    top:5px;
-    right:5px;
+.btn-open{
+   position:absolute;
+   top:18px;
+   left:18px;
 }
 
-@media(max-width:768px){
-    .sidebar{
-        width:200px;
-        visibility:hidden;
-        border-right:1px solid rgba(0,0,0,0.125);
-    }
-    .dashboard-header{
-        background-color: whitesmoke;
-        border-bottom:1px solid rgba(0,0,0,0.125);
-        position:sticky;
-        top:0;
-        left:0;
-        z-index:1000;
-    }
-    .push-canvas{
-        left:200px;
-    }
-    
-}
-#dashboard{
+.dashboard-header{
+    position:sticky;
+    top:0;
+    left:0;
+    height:4rem;
+    background-color: $primary-color;
+    color:white;
+    z-index:9999;
+}  
 
-    
+#dashboard{ 
 
     .sidebar{
         position:fixed;
-        top:0px;
+        top:4rem;
         left:0px;
-        min-height:100vh;
+        height:calc(100vh - 4rem);
+        width:200px;
         overflow:scroll;
-        z-index:9999;
-        background-color:rgb(179, 179, 179);
+        border-right:0.5px solid gainsboro;
+        transition: all 1s;
 
-        .active{
-            background-color:white;
+        .nav-link{
+            display:flex;
+            align-items:center;
+            color:rgb(53, 49, 49);
         }
         .nav-link:hover{
             color: $primary-color;
+            background-color:gainsboro;
+           
         }
+        .active{
+            color: $primary-color;
+        }
+    }
+    .main-body{
+        position:fixed;
+        top:4rem;
+        right:0px;
+        height:calc(100vh - 4rem);
+        width:calc(100vw - 200px);
+        overflow:scroll;
+        background-color: white;
+        transition: left 1s;
         
     }
 
-    .main-body{
-        position:fixed;
-        top:0px;
-        right:0px;
-        height:100vh;
-        overflow:scroll;
-        background-color: white;
+    .filters{
+        display:none;
     }
 
-    
-
-    .show-sidebar{
-        visibility: visible;
+    .show-filter{
+        display:block;
     }
 
+
+    @media(max-width:768px){
+        .sidebar{
+            left:-200px;
+            border-right:1px solid rgba(0,0,0,0.125);
+        }
+        .main-body{
+            min-height:calc(100vh - 4rem);
+            width:100vw;
+        }
+        
+        .show-sidebar{
+            left: 0px;
+            transition: all 1s;
+        }
+        .push-canvas{
+            left:200px;
+        }
+        
+    }
 
     
 
